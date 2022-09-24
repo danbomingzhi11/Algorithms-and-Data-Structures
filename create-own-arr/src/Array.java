@@ -24,7 +24,7 @@ public class Array<E> {
         return size == 0;
     }
 
-    // 扩容
+    // 改变数组容量
     public void resize(int len) {
         E[] newData = (E[]) new Object[len];
         for (int i = 0; i < this.data.length; i++) {
@@ -114,6 +114,7 @@ public class Array<E> {
         // 内存回收
         this.data[size] = null;
 
+        // 缩容
         if (size <= this.data.length / 2) {
             resize(this.data.length / 2);
         }

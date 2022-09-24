@@ -100,6 +100,7 @@ public class Arr<E> {
         size --;
         data[size] = null; // loitering objects != memory leak
 
+        // 缩容
         if(size == data.length / 2)
             resize(data.length / 2);
         return ret;
