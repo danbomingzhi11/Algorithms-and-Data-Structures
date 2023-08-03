@@ -1,5 +1,3 @@
-import java.util.Collection;
-
 public interface List<E> {
 
     // 获取数组中元素个数
@@ -18,10 +16,7 @@ public interface List<E> {
     void set(int index, E e);
 
     // 判断元素是否存在
-    boolean contains(Object e);
-
-    // 根据元素返回数组下标
-    int find(E e);
+    boolean contains(E e);
 
     // 删除元素
     E remove(int index);

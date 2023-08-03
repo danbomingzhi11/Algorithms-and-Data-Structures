@@ -46,7 +46,6 @@ public class DynamicList<E> implements List<E> {
      * 获取集合的容量（数组的长度）。
      * Get the capacity (length of the underlying array) of the collection.
      */
-    @Override
     public int getCapacity() {
         return data.length;
     }
@@ -178,7 +177,6 @@ public class DynamicList<E> implements List<E> {
      * @param newCapacity 新的容量。
      *                    The new capacity.
      */
-    @Override
     public void resize(int newCapacity) {
         data = Arrays.copyOf(data, newCapacity);
     }
