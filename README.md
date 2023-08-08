@@ -14,6 +14,9 @@ https://space.bilibili.com/3493132727487288/channel/series
       </li>
       <li>
         链表练习
+           <div>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List集合下面除了有由数组实现的ArrayList，还有用链表实现的LinkedList，LinkedList底层核心是一个内部类Node，Node中保存每个链表的数据，以及下个链表的地址，在Java中没有指针的概念，地址是可以传递的，前面说的是单链表，除了单链表还有双链表、循环链表等等，链表的特性就是增加删除速度快，查询慢，这与链表的特性有关，数组是一组连续的内存空间（虚拟内存，其实在真正的物理上不一定连续），链表存储在不同的位置，在编写LinkedList时，只感觉到这一块有所不同，其他其实相差不大。
+           </div>
       </li>
     </ul>
   </div>
