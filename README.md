@@ -25,7 +25,7 @@ https://space.bilibili.com/3493132727487288/channel/series
                                     <h4>LeetCode 剑指 Offer 05. 替换空格</h4>
                                 </div>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的思路：这道题如果使用Java 8来写，Java
-                                8中String字符串是包装类，要将类中每一个字符单独拿出来判断，那就要给这些字符一个容器，这个容器一定是数组，为什么不是链表？因为链表查询起来比数组慢，又因为Java
+                                8中String字符串是包装类，要想得到那个空格必须要遍历数组中所有的元素，要将类中每一个字符单独拿出来判断，那就要给这些字符一个容器，这个容器一定是数组，为什么不是链表？因为链表查询起来比数组慢，又因为Java
                                 8的String包装类底层就是char[]数组，所以我想到有String类自带的replaceAll方法，但是最终提交上去时间空间复杂度都不理想。于是我放弃使用String类中的方法，而是将String转为char[]，新建一个char[]容器来承载它，这种方法空间复杂度不理想。最后我用了StringBuffer来作为这个容器，StringBuffer时间和空间复杂度都非常理想。通过这个题我总结出一下几点：1.StringBuffer在这道题的解法中比StringBuilder占空间小很多。2.第一次指导char[]数组转为String，可以用new
                                 String();的方式。3.熟悉了String类中的各种方法的使用。
                             </div>
