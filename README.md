@@ -5,7 +5,7 @@
 https://space.bilibili.com/3493132727487288/channel/series
 <body>
     <div>
-        <h2>基础数据结构练习</h2>
+        <h2>基础数据结构练习(data-structure)</h2>
         <div>
             <ul>
                 <li>
