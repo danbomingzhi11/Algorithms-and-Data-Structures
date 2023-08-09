@@ -1,3 +1,5 @@
+package DynamicList;
+
 import java.util.Arrays;
 
 public class DynamicList<E> implements List<E> {

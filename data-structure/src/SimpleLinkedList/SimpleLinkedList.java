@@ -1,3 +1,5 @@
+package SimpleLinkedList;
+
 public class SimpleLinkedList<E> implements List<E> {
     // 定义内部链表节点
     private class Node<E> {

@@ -1,3 +1,5 @@
+package SimpleLinkedList;
+
 public class Main {
     public static void main(String[] args) {
         SimpleLinkedList<Integer> s = new SimpleLinkedList();

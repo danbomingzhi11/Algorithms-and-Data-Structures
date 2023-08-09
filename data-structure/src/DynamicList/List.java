@@ -1,3 +1,5 @@
+package DynamicList;
+
 import java.util.Collection;
 
 public interface List<E> {

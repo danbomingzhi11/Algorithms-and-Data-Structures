@@ -1,3 +1,5 @@
+package SimpleLinkedList;
+
 public interface List<E> {
 
     // 获取数组中元素个数

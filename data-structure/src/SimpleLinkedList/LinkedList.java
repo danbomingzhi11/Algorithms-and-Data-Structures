@@ -1,3 +1,5 @@
+package SimpleLinkedList;
+
 public class LinkedList<E> {
     private class Node<E> {
         private E e;
