@@ -3,14 +3,21 @@
      
 https://space.bilibili.com/3493132727487288/channel/series
 <div>
-  <h4>基础数据结构练习</h4>
+  <h2>基础数据结构练习</h2>
   <div>
     <ul>
       <li>
-        数组练习
-           <div>
+        <h3>数组练习</h3> 
+           <ul>
+                <li>
+                <div>
+                     <div>
+                          <h4>DynamicList</h4>
+                     </div>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;模拟List集合下的ArrayList，ArrayList的本质是对一个数组进行操作，我们平时在定义的数组的时候通常会定义数组的大小，ArrayList在底层也会定义一个默认长度的数组这里假设可存储元素为10，当超过数组下标时，通常会报错，但是ArrayList通过巧妙地数学概念扩容缩容阈值动态的变更数组的大小（这里提一嘴，想要互联网金字塔的顶端，学好数学至关重要），所以用户感觉不到ArrayList底层的数组。
            </div>
+                </li> 
+           </ul>
       </li>
       <li>
         链表练习
