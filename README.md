@@ -50,9 +50,9 @@ https://space.bilibili.com/3493132727487288/channel/series
                                     <h4>LeetCode 剑指 Offer 06. 从尾到头打印链表</h4>
                                 </div>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这道题主要核心是考察递归思想,我的思路:首先要将链表倒过来用数组来表示,那就一定要有一个数组容器,那就需要知道链表的长度,起初我打算用ArrayList来实现(ArrayList底层有扩容缩容机制),因为ArrayList只支持包装类型,所以弃用,后来才想到Java具有自动拆装箱功能,于是又启用,但是性能真的不如自己定义int[]基本类型数组，这道题有三种解法：</br>
-                                1.自己定义一个int[]基本类型数组作为容器,并利用递归思想。这个方法时间和空间复杂度最佳</br>
-                                2.使用ArrayList这里有一个问题,ArrayList只支持包装类型,这里涉及到Java的自动拆装箱特性。用了ArrayList时间复杂度增加,可见Java这些包装类真的不如C或者C++那种语言快,Java是牺牲了性能来换他的全局性</br>
-                                3.这个方法很有意思使用LinkedList的特性来模拟Stack栈,这种方法甚至不用写递归,但是时间和空间复杂度一般。
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.自己定义一个int[]基本类型数组作为容器,并利用递归思想。这个方法时间和空间复杂度最佳</br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.使用ArrayList这里有一个问题,ArrayList只支持包装类型,这里涉及到Java的自动拆装箱特性。用了ArrayList时间复杂度增加,可见Java这些包装类真的不如C或者C++那种语言快,Java是牺牲了性能来换他的全局性</br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.这个方法很有意思使用LinkedList的特性来模拟Stack栈,这种方法甚至不用写递归,但是时间和空间复杂度一般。
                             </div>
                         </li>
                     </ul>
