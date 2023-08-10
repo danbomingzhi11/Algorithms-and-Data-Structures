@@ -1,4 +1,4 @@
-package SimpleLinkedList;
+package link.simplelinkedlist;
 
 public class Main {
     public static void main(String[] args) {

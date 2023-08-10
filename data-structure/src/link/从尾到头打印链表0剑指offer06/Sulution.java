@@ -1,8 +1,6 @@
-package 从尾到头打印链表0剑指offer06;
+package link.从尾到头打印链表0剑指offer06;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Stack;
 
 /**
  * Definition for singly-linked list.

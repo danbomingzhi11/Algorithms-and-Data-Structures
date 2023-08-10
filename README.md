@@ -15,7 +15,7 @@ https://space.bilibili.com/3493132727487288/channel/series
                         <li>
                             <div>
                                 <div>
-                                    <h4>DynamicList</h4>
+                                    <h4>array.dynamicList</h4>
                                 </div>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;模拟List集合下的ArrayList,ArrayList的本质是对一个数组进行操作,我们平时在定义的数组的时候通常会定义数组的大小,ArrayList在底层也会定义一个默认长度的数组这里假设可存储元素为10,当超过数组下标时,通常会报错,但是ArrayList通过巧妙地数学概念扩容缩容阈值动态的变更数组的大小（这里提一嘴,想要互联网金字塔的顶端,学好数学至关重要）,所以用户感觉不到ArrayList底层的数组。
                             </div>
@@ -39,7 +39,7 @@ https://space.bilibili.com/3493132727487288/channel/series
                         <li>
                             <div>
                                 <div>
-                                    <h4>SimpleLinkedList</h4>
+                                    <h4>link.simplelinkedlist</h4>
                                 </div>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List集合下面除了有由数组实现的ArrayList,还有用链表实现的LinkedList,LinkedList底层核心是一个内部类Node,Node中保存每个链表的数据,以及下个链表的地址,在Java中没有指针的概念,地址是可以传递的,前面说的是单链表,除了单链表还有双链表、循环链表等等,链表的特性就是增加删除速度快,查询慢,这与链表的特性有关,数组是一组连续的内存空间（虚拟内存,其实在真正的物理上不一定连续）,链表存储在不同的位置,在编写LinkedList时,只感觉到这一块有所不同,其他其实相差不大。
                             </div>

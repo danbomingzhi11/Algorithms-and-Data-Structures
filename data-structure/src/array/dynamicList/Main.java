@@ -1,4 +1,4 @@
-package DynamicList;
+package array.dynamicList;
 
 public class Main {
     public static void main(String[] args) {

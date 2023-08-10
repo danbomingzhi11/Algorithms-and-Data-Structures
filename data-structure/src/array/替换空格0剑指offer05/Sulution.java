@@ -1,4 +1,4 @@
-package 替换空格0剑指offer05;
+package array.替换空格0剑指offer05;
 
 /*
 

@@ -1,4 +1,6 @@
-package SimpleLinkedList;
+package link.simplelinkedlist;
+
+import com.sun.xml.internal.bind.v2.TODO;
 
 public class SimpleLinkedList<E> implements List<E> {
     // 定义内部链表节点
@@ -75,7 +77,7 @@ public class SimpleLinkedList<E> implements List<E> {
 
         Node pred = dummyHead.next;
         for (int i = 0; i < index; i++) {
-            if (pred == null) throw new NullPointerException("Null Pointer");
+            if (pred.next == null) break;
             pred = pred.next;
         }
         return (E) pred.e;
@@ -112,20 +114,26 @@ public class SimpleLinkedList<E> implements List<E> {
     }
 
     // 移除指定索引的元素，并返回被移除的元素值
+    // TODO: 有BUG 这块研究一下
     @Override
     public E remove(int index) {
         if (index < 0 || index >= size)
             throw new IllegalArgumentException("Remove failed. Illegal index.");
 
         Node prev = dummyHead;
-        for (int i = 0; i < index; i++) {
+        Node node2 = new Node(0);
+
+        Node node1 = null;
+        if (index == 0) prev.next = null;
+        for (int i = -1; i < index; i++) {
+            node1 = prev;
             prev = prev.next;
         }
-        Node res = prev.next;
-        prev.next = prev.next.next;
+        Node res = node1.next;
+        node1.next = prev.next;
         size--;
 
-        return null;
+        return (E) res;
     }
 
     // 重写toString方法，将链表元素转为字符串表示

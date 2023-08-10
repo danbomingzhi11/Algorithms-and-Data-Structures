@@ -1,4 +1,4 @@
-package DynamicList;
+package array.dynamicList;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package SimpleLinkedList;
+package array.dynamicList;
 
 public interface List<E> {
 
@@ -18,7 +18,10 @@ public interface List<E> {
     void set(int index, E e);
 
     // 判断元素是否存在
-    boolean contains(E e);
+    boolean contains(Object e);
+
+    // 根据元素返回数组下标
+    int find(E e);
 
     // 删除元素
     E remove(int index);

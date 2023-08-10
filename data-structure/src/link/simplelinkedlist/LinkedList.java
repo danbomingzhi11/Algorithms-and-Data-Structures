@@ -1,4 +1,4 @@
-package SimpleLinkedList;
+package link.simplelinkedlist;
 
 public class LinkedList<E> {
     private class Node<E> {

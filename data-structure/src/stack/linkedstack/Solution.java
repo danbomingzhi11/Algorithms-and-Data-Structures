@@ -1,10 +1,12 @@
+package stack.linkedstack;
+
 import java.util.Stack;
 
 class Solution {
 
     public boolean isValid(String s) {
 
-        Stack<Character> stack = new Stack<>();
+        LinkedStack<Character> stack = new LinkedStack<Character>();
         int i = 0;
         for (i = 0 ; i < s.length(); i++) {
             char c = s.charAt(i);
