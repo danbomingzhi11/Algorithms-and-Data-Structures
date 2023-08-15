@@ -18,9 +18,11 @@ public class Main {
         s.set(0, 312312);
         System.out.println(s.toString());
 
+        System.out.println(s.remove(0));
         s.remove(0);
         System.out.println(s.toString());
 
         System.out.println(s.contains(413));
+
     }
 }

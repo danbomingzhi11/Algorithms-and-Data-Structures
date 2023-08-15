@@ -114,23 +114,32 @@ public class SimpleLinkedList<E> implements List<E> {
     }
 
     // 移除指定索引的元素，并返回被移除的元素值
-    // TODO: 有BUG 这块研究一下
     @Override
     public E remove(int index) {
         if (index < 0 || index >= size)
             throw new IllegalArgumentException("Remove failed. Illegal index.");
 
-        Node prev = dummyHead;
-        Node node2 = new Node(0);
+        Node newNode = null;
 
-        Node node1 = null;
-        if (index == 0) prev.next = null;
-        for (int i = -1; i < index; i++) {
-            node1 = prev;
+        if (index == 0) {
+            if (dummyHead.next == null) {
+                size--;
+                return null;
+            } else {
+                newNode = dummyHead.next;
+                dummyHead.next = dummyHead.next.next;
+                size--;
+            }
+            return (E) newNode;
+        }
+
+        Node prev = dummyHead;
+
+        for (int i = 0; i < index; i++) {
             prev = prev.next;
         }
-        Node res = node1.next;
-        node1.next = prev.next;
+        Node res = prev;
+        prev.next = prev.next.next;
         size--;
 
         return (E) res;

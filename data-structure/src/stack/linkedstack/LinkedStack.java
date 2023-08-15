@@ -28,7 +28,7 @@ public class LinkedStack<E> implements Stack<E> {
         // 获取链表的大小
         int size = simpleLinkedList.getSize();
         // 移除链表中的栈顶元素并返回
-        return (E) simpleLinkedList.remove(size - 1);
+        return simpleLinkedList.remove(size - 1);
     }
 
     @Override

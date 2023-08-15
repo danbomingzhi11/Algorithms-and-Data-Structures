@@ -15,7 +15,6 @@ class Solution {
             else {
                 if (stack.isEmpty())
                     break;
-
                 char topChar = stack.pop();
                 if (c == ')' && topChar != '(')
                     break;
