@@ -1,7 +1,5 @@
 package stack.linkedstack;
 
-import java.util.Stack;
-
 class Solution {
 
     public boolean isValid(String s) {

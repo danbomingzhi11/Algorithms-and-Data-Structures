@@ -56,6 +56,28 @@ https://space.bilibili.com/3493132727487288/channel/series
                             </div>
                         </li>
                     </ul>
+                </li>
+                <li>
+                    <h3>栈练习</h3>
+                    <ul>
+                        <li>
+                            <div>
+                                <div>
+                                    <h4>link.linkedStack</h4>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过上面的Simplelinkedlist实现栈
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <h4>LeetCode 剑指 Offer 09. 用两个栈实现队列</h4>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心思想:有点像两杯热水倒来倒去,用两个栈实现队列。
+                            </div>
+                        </li>
+                    </ul>
+                </li>
         </div>
         </li>
         </ul>
